@@ -121,6 +121,7 @@ header .container p {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+  font-family: "Press Start 2P", sans-serif;
 }
 .roles .container .boxInput input[type="number"]:focus {
   outline: none;

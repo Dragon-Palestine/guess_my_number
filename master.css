@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+body {
+  background-color: rgb(26, 26, 26);
+  font-family: "Press Start 2P", sans-serif;
+  /* font-size: 62.5%; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #efefd7;
+}
+
+/* start header */
+input[type="button"] {
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: var(--main-color);
+  border: none;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Press Start 2P", sans-serif;
+}
+input[type="button"]:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+header .container p {
+  color: white;
+  line-height: 2;
+}
+/* end header */
+
+/* start title */
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+  padding-bottom: 50px;
+  position: relative;
+  margin-bottom: 50px;
+  line-height: 2;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 3px;
+  background-color: var(--main-color);
+  left: 0;
+  bottom: 0;
+}
+.title::before {
+  content: "?";
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 800;
+  z-index: 1;
+}
+.title h1 {
+  color: white;
+}
+/* End title */
+
+/* start roles */
+.roles {
+}
+.roles .container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  height: 54vh;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+@media (max-width: 772px) {
+  .roles .container {
+    flex-direction: column-reverse;
+  }
+}
+.roles .container .boxInput {
+  width: 45%;
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.roles .container .boxInput input[type="number"] {
+  height: 60px;
+  width: 250px;
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.roles .container .boxInput input[type="number"]:focus {
+  outline: none;
+}
+.roles .container ul {
+  width: 45%;
+  list-style: none;
+  padding: 15px 0;
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+}
+@media (max-width: 772px) {
+  .roles .container ul {
+    width: fit-content;
+  }
+}
+.roles .container ul li:first-child {
+  margin-bottom: 25px;
+}
+.roles .container ul li:nth-child(2) {
+  margin-bottom: 10px;
+}
+/* end roles */
+
+footer h2 {
+  color: white;
+  text-align: center;
+  border-top: 1px solid white;
+  padding: 20px;
+  font-size: 20px;
+}
